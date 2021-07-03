@@ -1,15 +1,15 @@
-function heart() {
-    const heart = document.createElement('div');
-    heart.classList.add("heart")
+function rainfall() {
+    const rain = document.createElement('div');
+    rain.classList.add("rain")
 
 
-    heart.style.left = Math.random() * 100 + "vw"
-    heart.style.animationDirection = Math.random() * 2 + 3
-    heart.innerText = "❤️" + "i love you"
-    document.body.appendChild(heart)
+    rain.style.left = Math.random() *100 + "vw"
+    rain.style.animationDirection = Math.random() * 2 + 3
+    rain.innerText = "|" 
+    document.body.appendChild(rain)
     setTimeout(() => {
-        heart.remove();
+        rain.remove();
 
     }, 3000)
 }
-setInterval(heart, 200)
+setInterval(rainfall,3)

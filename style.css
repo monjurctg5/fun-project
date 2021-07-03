@@ -8,11 +8,10 @@
 button {
     font-size: 300px;
     background-color: white;
-    border-radius: 50%;
     border: none;
     outline: none;
     position: absolute;
-    top: 70%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -27,13 +26,26 @@ p {
 .rain {
     position: fixed;
     top: -1vh;
-    font-size: 20px;
-    animation: heartrain 4s linear forwards;
-    transition: transform 3s;
+    font-size: 10px;
+    animation: heartrain 2s linear forwards;
+    transition: transform 2s;
 }
 
 @keyframes heartrain {
     to {
         transform: translateY(800px);
     }
+}
+
+
+
+@media screen and (max-width:600px) {
+
+    .column {
+        width: 100%;
+    }
+    img{
+        width: 100%;
+    }
+
 }

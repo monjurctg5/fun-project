@@ -4,12 +4,10 @@ function rainfall() {
 
 
     rain.style.left = Math.random() *100 + "vw"
-    rain.style.animationDirection = Math.random() * 2 + 3
-    rain.innerText = "|" 
+    rain.style.animationDirection = Math.random() * 6
+    rain.innerText = "💧" 
     document.body.appendChild(rain)
-    setTimeout(() => {
-        rain.remove();
-
-    }, 3000)
+    setTimeout(3000)
 }
+
 setInterval(rainfall,3)
